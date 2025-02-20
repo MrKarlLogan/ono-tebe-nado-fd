@@ -25,13 +25,19 @@
         </ul>
       </nav>
       <a class="header__logo">
-        <img class="header__logo-image" alt="Чёрное лого" src="./images/logo-black.svg">
+        <img class="header__logo-image" alt="black__logo" src="./images/logo-black.svg">
       </a>
-      <address class="address">
-            <a href="tel:+79995555555">+9 999 555 5555</a>
-              <br>
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p class="header__address">наб. Принсенграхт 263- 265, Амстердам</p>
+      <address id="address__top-position" class="address">
+        <a href="tel:+79995555555">
+          +9 999 555 5555
+        </a>
+        <br>
+        <a href="mailto:info@sobaka.ge">
+          info@sobaka.ge
+        </a>
+        <p class="header__address">
+          наб. Принсенграхт 263- 265, Амстердам
+        </p>
       </address>
     </header>
     <main>
@@ -90,12 +96,12 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="card__link">посмотреть больше</a>
+        <a target="_blank" href="https://practicum.yandex.ru/profile/frontend-developer/" class="card__link">посмотреть больше</a>
       </section>
       <section class="about">
           <div class="about__logo-position">
             <div class="about__logo">
-              <img class="about__logo-image" alt="about__logo" src="./images/logo-white.svg">
+              <img class="about__logo-image" alt="white__logo" src="./images/logo-white.svg">
             </div>
           </div>
         <div class="about__text-position">
@@ -109,13 +115,42 @@
         </div>
       </section>
     </main>
-    <footer>
-      <address></address>
-      <nav></nav>
-      <ul>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
+    <footer class="footer">
+      <address id="address__bottom-position" class="address">
+        <a href="tel:+79995555555">+9 999 555 5555</a>
+        <br>
+      <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+    <p class="header__address">наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link_active">главная</a>
+          </li class="footer__menu-list-item">
+          <li class="footer__menu-list-item">
+            <a href="#lots" class="footer__menu-link">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#about" class="footer__menu-link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a target="_blank" href="https://www.youtube.com/" class="footer__social-link">
+            <img class="footer__social-icon" alt="youtube" src="./images/yt.svg">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a target="_blank" href="https://vk.com/" class="footer__social-link">
+            <img class="footer__social-icon" alt="vk" src="./images/vk.svg">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a target="_blank" href="https://pinterest.com/" class="footer__social-link">
+            <img class="footer__social-icon" alt="pinterest" src="./images/pinterest.svg">
+          </a>
+        </li>
       </ul>
     </footer>
   </body>
