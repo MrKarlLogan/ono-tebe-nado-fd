@@ -10,38 +10,87 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <header>
-      <nav></nav>
-      <a></a>
-      <address></address>
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item_no-bullit">
+            <a class="header__link_active">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#" class="header__link">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#" class="header__link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__logo">
+        <img class="header__logo-image" alt="Чёрное лого" src="./images/logo-black.svg">
+      </a>
+      <address class="address">
+            <a href="tel:+79995555555">+9 999 555 5555</a>
+              <br>
+            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p class="header__address">наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover">
-        <h1>Оно тебе надо</h1>
-        <div class="description">
-          <p>Аукцион вещей, вкоторые никто не верил</p>
-          <button>Сделать ставку</button>
-        </div>
+        <div class="overlay"></div>
+          <h1 class="cover__title">
+            <span class="aligned-text">Он<span class="no-letter-spacing">о</span></span>
+            <span class="aligned-text_center">теб<span class="no-letter-spacing">е</span></span>
+            <span class="aligned-text_right">над<span class="no-letter-spacing">о</span></span>
+          </h1>
+          <div class="cover__description">
+            <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+            <button type="button" class="bet-button">Сделать ставку</button>
+          </div>
       </section>
       <section class="lots">
-        <h1></h1>
-        <ul>
-          <li>
-            <a>
-              <article></article>
+        <h1 class="lots__heading">Лоты</h1>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h2 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h2>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
             </a>
           </li>
-          <li>
-            <a>
-              <article></article>
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_book overlay">
+                <div class="overlay"></div>
+                <h2 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h2>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса
+                </p>
+              </article>
             </a>
           </li>
-          <li>
-            <a>
-              <article></article>
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_picture overlay">
+                <div class="overlay"></div>
+                <h2 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h2>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+                </p>
+              </article>
             </a>
           </li>
         </ul>
+        <a href="#" class="card__link">посмотреть больше</a>
       </section>
       <section class="about">
         <div></div>
