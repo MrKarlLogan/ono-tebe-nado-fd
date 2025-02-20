@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   height: 293px;
   margin: 0 50px;
@@ -28,6 +32,7 @@
 }
 
 .header__logo-image {
+  
   width: 148px;
   height: 105px;
 }
@@ -179,4 +184,55 @@
   position: relative;
   top: 30px;
   left: 40px;
+}
+
+.about {
+  margin: 120px 24px 180px;
+  min-height: 595px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+}
+
+.about__logo-position {
+  grid-row: 1 / span 1;
+  justify-self: center;
+  padding-top: 35px;
+}
+
+.about__text-position {
+  grid-row: 1 / span 1;
+  padding-top: 136px;
+  padding-left: 25px;
+}
+
+.about__logo{
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  padding-top: 100px;
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.p__position {
+  margin-top: 24px;
 }
