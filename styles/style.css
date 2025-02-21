@@ -1,3 +1,12 @@
+/* И снова привет тебе, ревьювер!
+Спасибо тебе за очень ценную обратную связь!
+Я прям подметил для себя многие моменты.
+
+Я исправил всё твои замечания, плюс
+добавил новых фишек для практики, чтобы это
+выглядело уже как полноценная работа.
+Надеюсь, что со 2-й попытки я сдам =D */
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,7 +19,7 @@ html {
 }
 
 .header__menu {
-  margin: 133px 0 138px; 
+  margin: 133px 0 138px;
 }
 
 .header__links {
@@ -22,6 +31,10 @@ html {
 .header__link_active {
   text-decoration: none;
 }
+
+/* я пробовал вариант с 
+.header__links-list-item:first-child { list-style: none; }
+Всё хорошо работает. Спасибо за новый способ! */
 
 .header__links-list-item {
   list-style-type: circle;
@@ -54,10 +67,9 @@ html {
 .address {
   font-style: normal;
   align-self: center;
-  line-height: 24px;
+  line-height: 24.5px;
   text-underline-offset: 4px;
   padding-bottom: 4px;
-  line-height: 24.5px;
 }
 
 .tel:hover, .email:hover {
@@ -184,24 +196,20 @@ html {
   justify-content: space-between;
   position: relative;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_film:hover, .card_type_book:hover, .card_type_picture:hover {
@@ -237,7 +245,7 @@ html {
   padding-left: 25px;
 }
 
-.about__logo{
+.about__logo {
   width: 240px;
   height: 240px;
   background-color: black;
