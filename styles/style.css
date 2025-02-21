@@ -1,14 +1,8 @@
-/* Привет тебе, ревьювер!
-Постарался в свою первую работу вложить максимум полученных знаний на спринте.
-У меня есть пара вопросов, которые я опишу ниже в комментариях, 
-буду очень благодарен за обратную связь. */
-
 html {
   scroll-behavior: smooth;
 }
 
 .header {
-  height: 293px;
   margin: 0 50px;
   font-size: 18px;
   display: grid;
@@ -18,7 +12,6 @@ html {
 
 .header__menu {
   margin: 133px 0 138px; 
-  /* Знаю, что можно воспользоваться другим способом (align-self: center;), но я его обнаружил уже на footer'e... */
 }
 
 .header__links-list {
@@ -29,9 +22,6 @@ html {
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
-
-/* Никак не могу сообразить, что нужно "повесить" на header__link_active как и на header__link. 
-Я не стал удалять эти классы на случай, если мне понадобиться всё-же их использовать */
 
 .header__links-list-item {
   list-style-type: circle;
@@ -63,16 +53,10 @@ html {
   justify-self: end;
 }
 
-/* Вроде мы такое ещё не проходили (описано выше), но
-"хороший программист тот, кто умеет гуглить" */
-
-/* header__address тоже не понял где использовать. Вроде всё так на своих местах. */
-
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
-  height: 757px;
   text-transform: uppercase;
   color: #fff;
   position: relative;
@@ -80,7 +64,7 @@ html {
 }
 
 .overlay {
-  background-color: rgb(0 0 0 / 0.7);
+  background-color: rgb(0 0 0 / 0.6);
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -90,7 +74,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 165px 50px 0px;
+  padding: 167px 50px 0px;
   font-size: 100px;
   letter-spacing: 30px;
 }
@@ -125,7 +109,7 @@ html {
 
 .bet-button {
   width: 256px;
-  height: 51px;
+  padding: 11px 0;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -134,7 +118,6 @@ html {
 
 .lots {
   margin: 180px 24px 120px;
-  min-height: 723px;
 }
 
 .lots__heading {
@@ -200,16 +183,14 @@ html {
 }
 
 .card__link {
+  display: block;
+  padding: 30px 40px 0;
   font-size: 20px;
   text-underline-position: under;
-  position: relative;
-  top: 30px;
-  left: 40px;
 }
 
 .about {
-  margin: 120px 24px 180px;
-  min-height: 595px;
+  padding: 0px 24px 180px;
   display: grid;
   grid-template-columns: 334px 1fr;
 }
@@ -259,7 +240,6 @@ html {
 }
 
 .footer {
-  height: 180px;
   margin: 0 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
