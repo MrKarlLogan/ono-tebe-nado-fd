@@ -7,26 +7,38 @@ html {
   font-size: 18px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  
 }
 
 .header__menu {
   margin: 133px 0 138px; 
 }
 
-.header__links-list {
+.header__links {
   display: flex;
-  gap: 33px;
+  gap: 29px;
+  text-underline-offset: 4px;
 }
 
-.header__links-list-item_no-bullit {
-  list-style-type: none;
+.header__link_active {
+  text-decoration: none;
 }
 
 .header__links-list-item {
   list-style-type: circle;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  padding: 0 3px;
+}
+
+.header__links-list-item_no-bullit {
+  padding: 0;
+  list-style: none;
+}
+
+.header__menu-link:hover {
+  color: grey;
+}
+
+.header__link_active:hover {
+  color: #000;
 }
 
 .header__logo {
@@ -48,9 +60,14 @@ html {
   line-height: 24.5px;
 }
 
-#address__top-position {
+.tel:hover, .email:hover {
+  color: grey;
+}
+
+.address__top-position {
   max-width: 240px;
   justify-self: end;
+  align-self: center;
 }
 
 .cover {
@@ -74,7 +91,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 167px 50px 0px;
+  padding: 168px 50px 0px;
   font-size: 100px;
   letter-spacing: 30px;
 }
@@ -114,6 +131,11 @@ html {
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bet-button:hover {
+  background-color: rgb(255 255 255 / 0.2)
 }
 
 .lots {
@@ -182,11 +204,19 @@ html {
   background-position: center;
 }
 
+.card_type_film:hover, .card_type_book:hover, .card_type_picture:hover {
+  background-size: 180%;
+}
+
 .card__link {
-  display: block;
-  padding: 30px 40px 0;
+  display: inline-block;
+  margin: 30px 40px 0;
   font-size: 20px;
-  text-underline-position: under;
+  text-underline-offset: 4.5px;
+}
+
+.card__link:hover {
+  color: grey;
 }
 
 .about {
@@ -247,8 +277,7 @@ html {
   font-size: 18px;
 }
 
-#address__bottom-position {
-  max-width: 265px;
+.address__bottom-position {
   align-self: start;
 }
 
@@ -256,9 +285,24 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style-type: none;
   padding-bottom: 115px;
+  list-style: none;
+}
+
+.footer__menu-link {
   text-underline-offset: 4px;
+}
+
+.footer__menu-link:hover {
+  color: grey;
+}
+
+.footer__menu-link_active:hover {
+  color: #000;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
@@ -274,9 +318,7 @@ html {
   height: 48px;
 }
 
-/* Мог что-то пропустить, сижу уже 10 час... Но если есть неиспользованные стили, то я хотел бы просто понять, 
-как их можно использовать. Или от них можно просто отказаться и оставить так, как есть. */
-
-/* Проверял добавиление карточек - всё ок. 
-Проверял добавление <p> в 3-ю секцию, тоже всё ок.
-Если в header удалить одну из ссылок, то логотип остаётся по центру. Тоже вроде ок. */
+.footer__social-icon:hover {
+  background-color: lightgrey;
+  border-radius: 100%;
+}
